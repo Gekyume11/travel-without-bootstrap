@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - no bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="main container-fluid parent d-flex flex-column justify-content-between">
+        
+        <header class="container d-flex justify-content-between align-items-center">
+            <h2>TRAVEL</h2>
+            <div class="hamburger parent d-block">
+                <span class="top child"></span>
+                <span class="middle child"></span>
+                <span class="bottom child"></span>
+            </div>
+        </header>
+
+        <div class="container text">
+            <h2>NEVER STOP TO</h2>
+            <h3>EXPLORING THE WORLD</h3>
+            <p>This is a travel website, by Traversy Media, recreated by me, Dhruv, a full-stack developer. I reduced the code and made it responsive with no media queries & frameworks like bootstrap. You can contact me by clicking the button below</p>
+            <a class="d-block text-black smooth" href="https://www.instagram.com/dhr.the">CONTACT</a>
+        </div>
+
+        <ul class="container socials d-flex align-items-center">
+            <li><a href="#"><img class="smooth" src="https://i.ibb.co/x7P24fL/facebook.png" alt=""></a></li>
+            <li><a href="#"><img class="smooth" src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
+            <li><a href="#"><img class="smooth" src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a></li>
+            <br><br><br>
+        </ul>
+        <video muted loop autoplay playsinlie class="child h-100 container-fluid">
+            <source src="https://videos.pexels.com/video-files/2169880/2169880-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="overlay child h-100 container-fluid"></div>
+
+    </main>
+    <ul class="menu child d-flex flex-column h-100">
+        <li><a class="text-black" href="#">HOME</a></li>
+        <li><a class="text-black" href="#">NEWS</a></li>
+        <li><a class="text-black" href="#">DESTINATION</a></li>
+        <li><a class="text-black" href="#">BLOCK</a></li>
+        <li><a class="text-black" href="#">CONTACT</a></li>
+    </ul>
+    <script>
+        const menuTgoggle = document.querySelector('.hamburger')
+        const main = document.querySelector('.main')
+
+        menuTgoggle.addEventListener('click', () => {
+            menuTgoggle.classList.toggle('active')
+            main.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
