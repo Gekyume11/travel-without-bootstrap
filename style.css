@@ -55,9 +55,10 @@ main{
     z-index: 2;
     transition: .5s;
     color: #fff;
+    padding: 30px 0;
 }
 main.active{
-    transform: translateX(-235px) !important;
+    transform: translateX(-235px);
 }
 main video, .overlay{
     top: 0;
@@ -72,10 +73,7 @@ main .overlay{
     background: #03a9f4;
     mix-blend-mode: overlay;
 }
-header{
-    padding: 30px 0;
-}
-header h2, .hamburger{
+header h2, .hamburger, .socials img{
     cursor: pointer;
 }
 .hamburger{
@@ -132,18 +130,18 @@ header h2, .hamburger{
     padding: 10px 30px;
     letter-spacing: 3px;
     font-weight: 600;
-    background-color: #fff;
+    background: #fff;
     margin-top: 20px;
 }
 .text a:hover{
     letter-spacing: 6px;
 }
-.socials li a img{
-    filter: invert(1) !important;
+.socials img{
+    filter: invert(1);
     transform: scale(0.5);
     margin-right: 20px;
 }
-.socials li a img:hover{
+.socials img:hover{
     transform: scale(0.5) translateY(-15px);
 }
 .menu{
